@@ -8,8 +8,7 @@ bot = telebot.TeleBot(config.TOKEN)
  
 @bot.message_handler(commands=['start', 'tostart'])
 def welcome(message):
-    sti = open('stickers/welcome.webp', 'rb')
-    bot.send_sticker(message.chat.id, sti)
+    bot.send_sticker(message.chat.id, 'CAACAgIAAxkBAAIFOV4xVhYJTlClcNIZSbn7Tde47cj4AAIKAANxstsVtfYzdHpBkD0YBA')
  
     # keyboard
     markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
@@ -28,8 +27,7 @@ def welcome(message):
 
 @bot.message_handler(commands=['HackMode'])
 def HackMode(message):
-    sti = open('stickers/AnimatedStickerForBot.tgs', 'rb')
-    bot.send_sticker(message.chat.id, sti)
+    bot.send_sticker(message.chat.id, 'CAACAgIAAxkBAAIFZV4xVmCG47LruA5ax9N5MI1GRgABVgACBwADtZJJFTNJ9KJ6IuSBGAQ')
  
     # keyboard
     markup = types.ReplyKeyboardMarkup(resize_keyboard=True)

@@ -1,1 +1,2 @@
 web: python testbot6.py
+web: config.py
